@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+        <title>PFTP | StudentRegister</title>
+
+
+        <!-- Icons -->
+        <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+        <link rel="shortcut icon" href="https://apply.pftpedu.org/lms/assets/media/favicons/favicon.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="https://apply.pftpedu.org/lms/assets/media/favicons/favicon-192x192.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="https://apply.pftpedu.org/lms/assets/media/favicons/apple-touch-icon-180x180.png">
+        <!-- END Icons -->
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer data-deferred="1"></script>
+
+        <!-- Stylesheets -->
+        <!-- Fonts and OneUI framework -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+        <link rel="stylesheet" id="css-main" href="https://apply.pftpedu.org/lms/assets/css/oneui.min.css">
+        <link rel="stylesheet" id="css-main" href="https://apply.pftpedu.org/lms/assets/css/oneui.min.css">
+        <link rel="stylesheet" href="lms/assets/css/particle.css">
+
+        <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
+        <!-- <link rel="stylesheet" id="css-theme" href="assets/css/themes/amethyst.min.css"> -->
+        <!-- END Stylesheets -->
+
+<!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '341755767672398');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=341755767672398&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
+    </head>
+    <body>
+        <style>
+            .reg_back{
+                border-radius: 21px;
+            background-color: white;
+            box-shadow: 1px 1px 10px lightgrey
+            }
+
+            .bg {
+  /* The image used */
+  background-image: url("https://i.ibb.co/yPLfh9P/Whats-App-Image-2021-06-28-at-5-09-30-PM.jpg");
+/* background-color: white; */
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+        </style>
+        <div id="page-container">
+
+            <!-- Main Container -->
+            <main id="main-container">
+
+                <!-- Page Content -->
+                <div class="hero-static">
+                    <div class="w-100">
+                        <!-- Sign Up Section -->
+                        <div class="bg" >
+                            <div id="particles-js"></div>
+                            <div class="content content-full">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-8 col-lg-6 col-xl-4 py-4 text-center reg_back ">
+                                        <!-- Header -->
+                                        <div class="text-center">
+                                            <p class="mb-2">
+
+                                             <img class="img-avatar" src="https://apply.pftpedu.org/lms/default/logo.png" >
+                                            </p>
+                                            <h1 class="h4  mb-1">
+                                                Create Account
+                                            </h1>
+                                            <h2 class="h6 font-w400 text-muted mb-3">
+                                                Get your access today in one easy step
+                                            </h2>
+                                        </div>
+                                        <!-- END Header -->
+                                           
+                                        <form class="js-validation-signup" action="https://apply.pftpedu.org/register" method="POST" id="frm">
+                                            <input type="hidden" name="_token" value="6B1TszQyXZo5JBFzzME1fHmY0kkhD4rZNDwLKEv4">                                            <div class="py-3">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control form-control-lg form-control-alt " value="" id="signup-username" name="signup-username" placeholder="Full Name" autofocus  pattern="^[a-zA-Z\s]*$">
+                                                                                                    </div>
+                                                <div class="form-group">
+                                                    <input type="number" class="form-control form-control-lg form-control-alt  " value="" id="mob" name="mob" maxlength="11" placeholder="Phone eg. 03**">
+                                                  
+                                                                                                    </div>
+                                                <div class="form-group">
+                                                    <input type="email" class="form-control form-control-lg form-control-alt " minlength="8" value="" id="email" name="email" placeholder="Valid Email">
+                                                                                                    </div>
+                                                <div class="form-group">
+                                                    <input type="password" class="form-control form-control-lg form-control-alt " id="signup-password" name="signup-password" placeholder="Password">
+                                                                                                    </div>
+                                                <div class="form-group">
+                                                    <input type="password" class="form-control form-control-lg form-control-alt" id="signup-password-confirm" name="signup-password-confirm" placeholder="Confirm Password">
+                                                    <div class="custom-control custom-switch mt-1" style="float: right">
+                                                        <input type="checkbox" class="custom-control-input" onclick="myFunction()" id="example-switch-custom1" name="example-switch-custom1">
+                                                        <label class="custom-control-label" for="example-switch-custom1">Show Password</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="d-md-flex align-items-md-center justify-content-md-between">
+                                                        <div class="custom-control custom-checkbox">
+                                                            
+                                                            <a href="https://apply.pftpedu.org/login" class="custom-control-label font-w400 text-success" for="signup-terms">I have an Account</a>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row justify-content-center mb-0">
+                                                <div class="col-md-6 col-xl-5">
+                                                    <button type="submit" id="send" class="btn btn-block btn-success">
+                                                        <i class="fa fa-fw fa-plus mr-1"></i> Sign Up
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <!-- END Sign Up Form -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END Sign Up Section -->
+
+                        <!-- Footer -->
+                        <div class="font-size-sm text-center text-muted py-3" style="    background-color: green;
+                        color: white !important;">
+                            <a href="https://pftpedu.org/" target="_blank"> <strong class="text-light">PFTP</strong></a> &copy; <span data-toggle="year-copy"></span>
+                            
+                        </div>
+                        <!-- END Footer -->
+                    </div>
+                </div>
+                <!-- END Page Content -->
+            </main>
+            <!-- END Main Container -->
+        </div>
+        <!-- END Page Container -->
+
+        <!-- Terms Modal -->
+        <div class="modal fade" id="one-signup-terms" tabindex="-1" role="dialog" aria-labelledby="one-signup-terms" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-popout" role="document">
+                <div class="modal-content">
+                    <div class="block block-rounded block-themed block-transparent mb-0">
+                        <div class="block-header bg-primary-dark">
+                            <h3 class="block-title">Terms &amp; Conditions</h3>
+                            <div class="block-options">
+                                <button type="button" class="btn-block-option" data-dismiss="modal" aria-label="Close">
+                                    <i class="fa fa-fw fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="block-content">
+                            <p>Dolor posuere proin blandit accumsan senectus netus nullam curae, ornare laoreet adipiscing luctus mauris adipiscing pretium eget fermentum, tristique lobortis est ut metus lobortis tortor tincidunt himenaeos habitant quis dictumst proin odio sagittis purus mi, nec taciti vestibulum quis in sit varius lorem sit metus mi.</p>
+                            <p>Dolor posuere proin blandit accumsan senectus netus nullam curae, ornare laoreet adipiscing luctus mauris adipiscing pretium eget fermentum, tristique lobortis est ut metus lobortis tortor tincidunt himenaeos habitant quis dictumst proin odio sagittis purus mi, nec taciti vestibulum quis in sit varius lorem sit metus mi.</p>
+                            <p>Dolor posuere proin blandit accumsan senectus netus nullam curae, ornare laoreet adipiscing luctus mauris adipiscing pretium eget fermentum, tristique lobortis est ut metus lobortis tortor tincidunt himenaeos habitant quis dictumst proin odio sagittis purus mi, nec taciti vestibulum quis in sit varius lorem sit metus mi.</p>
+                            <p>Dolor posuere proin blandit accumsan senectus netus nullam curae, ornare laoreet adipiscing luctus mauris adipiscing pretium eget fermentum, tristique lobortis est ut metus lobortis tortor tincidunt himenaeos habitant quis dictumst proin odio sagittis purus mi, nec taciti vestibulum quis in sit varius lorem sit metus mi.</p>
+                            <p>Dolor posuere proin blandit accumsan senectus netus nullam curae, ornare laoreet adipiscing luctus mauris adipiscing pretium eget fermentum, tristique lobortis est ut metus lobortis tortor tincidunt himenaeos habitant quis dictumst proin odio sagittis purus mi, nec taciti vestibulum quis in sit varius lorem sit metus mi.</p>
+                        </div>
+                        <div class="block-content block-content-full text-right border-top">
+                            <button type="button" class="btn btn-alt-primary mr-1" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">I Agree</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END Terms Modal -->
+
+
+        <!--
+            OneUI JS Core
+
+            Vital libraries and plugins used in all pages. You can choose to not include this file if you would like
+            to handle those dependencies through webpack. Please check out assets/_js/main/bootstrap.js for more info.
+
+            If you like, you could also include them separately directly from the assets/js/core folder in the following
+            order. That can come in handy if you would like to include a few of them (eg jQuery) from a CDN.
+
+            assets/js/core/jquery.min.js
+            assets/js/core/bootstrap.bundle.min.js
+            assets/js/core/simplebar.min.js
+            assets/js/core/jquery-scrollLock.min.js
+            assets/js/core/jquery.appear.min.js
+            assets/js/core/js.cookie.min.js
+        -->
+
+
+        <script src="lms/particles.js"></script>
+        <script src="lms/js/app.js"></script>
+    
+<script type="text/javascript">
+    $(document).ready(function() 
+
+$('#frm').bind('submit', function (e) {
+    var button = $('#send');
+
+    // Disable the submit button while evaluating if the form should be submitted
+    button.prop('disabled', true);
+
+    var valid = true;    
+
+    // Do stuff (validations, etc) here and set
+    // "valid" to false if the validation fails
+
+    if (!valid) { 
+        // Prevent form from submitting if validation failed
+        e.preventDefault();
+
+        // Reactivate the button if the form was not submitted
+        button.prop('disabled', false);
+    }
+});
+
+    });
+</script>
+        <script src="https://apply.pftpedu.org/lms/assets/js/oneui.core.min.js"></script>
+
+        <!--
+            OneUI JS
+
+            Custom functionality including Blocks/Layout API as well as other vital and optional helpers
+            webpack is putting everything together at assets/_js/main/app.js
+        -->
+        <script src="https://apply.pftpedu.org/lms/assets/js/oneui.app.min.js"></script>
+
+        <!-- Page JS Plugins -->
+        <script src="https://apply.pftpedu.org/lms/assets/js/plugins/jquery-validation/jquery.validate.min.js"></script>
+        <style>input[type=number]::-webkit-inner-spin-button, 
+            input[type=number]::-webkit-outer-spin-button { 
+              -webkit-appearance: none; 
+              margin: 0; 
+            }</style>
+        <!-- Page JS Code -->
+        <script src="https://apply.pftpedu.org/lms/assets/js/pages/op_auth_signup.min.js"></script>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("signup-password");
+              var x2 = document.getElementById("signup-password-confirm");
+
+              if (x.type === "password") {
+                x.type = "text";
+                x2.type="text";
+              } else {
+                x.type = "password";
+                x2.type = "password";
+              }
+            }
+            </script>
+    </body>
+</html>
